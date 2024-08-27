@@ -1,0 +1,22 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "waitFor": "onCreateCommand",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "formulahendry.code-runner",
+        "MS-CEINTL.vscode-language-pack-ja"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [3000]
+}
